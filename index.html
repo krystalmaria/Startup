@@ -1,86 +1,89 @@
+<!DOCTYPE html>
 <html>
-<head>
-	<link rel="shortcut icon" href="favicon.ico" type="image/png">
-	<link rel="stylesheet" href="css/style.css">
-	<!-- JQuery -->
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-	<title>Startup Idea Generator</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="share.min.js"></script>
-	<script language="javascript">
-		var adjectivesArray = ["Flame proof", "Water resistant", "Wifi enabled", "Vibrating", "Wearable", "Sharkproof", "Flammable", "Organic", "Automatic", "Flying", "Bendable", "Encrypted", "Musical", "Interactive", "Bluetooth enabled", "Edible", "Compact portable", "Solar powered", "Indestructible", "Invisible", "Comfortable imported", "Extra-durable", "Alcoholic", "AI-controlled", "Biodegradable", "High-end adult", "Vajazzled", "Globally shipped", "IT-based", "Cross functional", "Adaptive", "Economically sound", "Enterprise-wide", "End-to-end", "Frictionless", "Future-proof", "Inexpensive", "Ethical", "Low-risk high-yield", "Market-driven", "Interdependent", "Intuitive", "Multidisciplinary", "Open source", "Out of the box", "Plug and play", "Real time", "Standardized", "Sticky", "Transparent", "User friendly", "Handmade", "Anti-spam", "Carved wooden", "Personalised", "Cloud-driven", "Crowd sourced", "Time-saving", "Recycled", "Time-share", "Github for your", "Uber for your", "Air BNB for your", "A cross between Facebook and your", "Linkedin for your", "Remote controlled", "Perpetual motion", "3D printed", "Mobile", "Crowd funded", "Education meets your", "Life-saving", "Self-replicating", "Water saving", "Marketplace for", "Guide service for your", "RFID enabled", "Lubricated"];
-		var nounsArray = ["data mining", "deliverables", "whiteboard", "fashion", "robot", "gift service", "toy", "pet", "jewelry", "glasses", "engine", "panties", "plants", "furniture", "legal services", "light bulb", "electronics", "translating service", "cosmetics", "agriculture", "mobile app", "domain registration", "wallet", "smart watch", "car", "bicycle", "exercise equipment", "website", "charging station", "camera", "smartphone", "luggage", "hoverboard", "API", "shoes", "boat", "construction equipment", "growth hacking", "publishing", "gambling", "social media", "space travel", "chauffeur service", "surgery", "network", "ad platform", "iFrame plugin", "flat design"];
-		var endNounsArray = ["enabler", "driver", "fabricator", "enhancer", "generator", "incubator", "initiator", "maximiser", "negotiator", "optimizer", "procrastinator", "pursuer", "strategizer", "simplifier", "streamliner", "transitioner", "transformer", "synthesizer", "visualiser", "unit", "tool", "delivery", "based on homeopathic remedies", "that donates to starving children", "repair service", "for your home", "based on real-time feedback from your customers", "for farmers", "for children", "which leverages off your buying power", "that's good for the environment", "which self destructs when compromised", "for your cat", "produced through sustainable sources", "for students", "for backpackers"];
 
-		// Return a random value from the array
-		function randomArray(a) {
-			return a[Math.floor(Math.random() * a.length)];
-		}
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="What&#39;s my startup idea? : Randomly generated startup ideas." />
 
-		function sentence() {
-			var adjective = randomArray(adjectivesArray);
-			var noun = randomArray(nounsArray);
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-			function getEndNoun() {
-				var endNoun = Math.random();
-				if (endNoun < 0.2) {
-					return randomArray(endNounsArray);
-				} else {
-					return "";
-				}
-			}
+    <title>What&#39;s my startup idea?</title>
+  </head>
 
-			var endNoun = getEndNoun();
+  <body>
 
-			var output = (adjective + " " + noun + " " + endNoun);
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/krystalfister/Startup">View on GitHub</a>
 
-			$(".element").share({
-				text: "I just found my new startup idea: " + output,
-				app_id: 1448143845416014,
-				background: "#B2D1E5",
-				color: "#3C8DC5",
-				button_text: "Share this startup idea!",
+          <h1 id="project_title">What&#39;s my startup idea?</h1>
+          <h2 id="project_tagline">Randomly generated startup ideas.</h2>
 
-				facebook: {
-				  name: "What's my startup idea?",
-				  link: "www.whatsmystartupidea.com",
-				  image: "share_image.png",
-				  caption: "I just found my new startup idea: " + output,
-				  text: "short description"
-				},
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/krystalfister/Startup/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/krystalfister/Startup/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-				twitter: {
-				  text: "I just found my new startup idea: " + output,
-				  link: "www.whatsmystartupidea.com"
-				},
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-				gplus: {
-					link: "www.whatsmystartupidea.com"
-				}
-			});
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>
+<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>
+<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>
+<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">What&#39;s my startup idea? maintained by <a href="https://github.com/krystalfister">krystalfister</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-47710942-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
 
 
-			$("#output").html("<p>"+output+"</p>");
-			return output;
-		}
-		
-	</script>
-</head>
-<body>
-	<div id="main">
-		<h1>What's my startup idea?</h1>
-		<p>Click to generate ideas</p>
-		<button class="btn" onclick="sentence()">Generate</button>
-		<div class="content">
-			<div id="output"></div>
-			<div class="element"></div>
-		</div>
-	</div>
-	<div id="footer">
-		<p class="footerCredit">&copy Krystal Maria Fister</p>
-		<p class="footer">Am I missing a few good startup ideas? Tweet me  <a href="https://twitter.com/share" class="twitter-share-button" data-text="Enter your startup idea suggestion here" data-via="krystalfister" data-count="none" data-hashtags="startupideas">Tweet</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-	</div>
-</body>
+  </body>
 </html>
