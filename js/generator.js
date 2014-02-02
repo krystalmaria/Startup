@@ -20,48 +20,66 @@ return a[Math.floor(Math.random() * a.length)];
 }
 
 function sentence() {
-	var adjective = randomArray(adjectivesArray);
-	var noun = randomArray(nounsArray);
 
-	function getEndNoun() {
-		var endNoun = Math.random();
-		if (endNoun < 0.2) {
-			return randomArray(endNounsArray);
-		} else {
-			return "";
-		}
-	}	
+	// Check that json has loaded before running generator
+	if ((adjectivesArray && nounsArray && endNounsArray) == false) {
+		$.getJSON("data/data.json", function(json) {
+			adjectivesArray = json.adjectives;
+			nounsArray = json.nouns;
+			endNounsArray = json.endNouns;
+		    console.log(json); // this will show the info in firebug console
+		});
 
-	var endNoun = getEndNoun();
+		runGenerator();
 
-	var output = (adjective + " " + noun + " " + endNoun);
+	} else {}
 
-	$(".element").share({
-		text: "I just found my new startup idea: " + output,
-		app_id: 1448143845416014,
-		background: "#B2D1E5",
-		color: "#3C8DC5",
-		button_text: "Share this startup idea!",
+	function runGenerator() {
 
-		facebook: {
-		  name: "What's my startup idea?",
-		  link: "http://krystalfister.github.io/Startup/",
-		  image: "share_image.png",
-		  caption: "I just found my new startup idea: " + output,
-		  text: "short description"
-		},
+		var adjective = randomArray(adjectivesArray);
+		var noun = randomArray(nounsArray);
 
-		twitter: {
-		  text: "I just found my new startup idea: " + output,
-		  link: "http://krystalfister.github.io/Startup/"
-		},
+		function getEndNoun() {
+			var endNoun = Math.random();
+			if (endNoun < 0.2) {
+				return randomArray(endNounsArray);
+			} else {
+				return "";
+			}
+		}	
 
-		gplus: {
-			link: "http://krystalfister.github.io/Startup/"
-		}
-	});
+		var endNoun = getEndNoun();
+
+		var output = (adjective + " " + noun + " " + endNoun);
+
+		$(".element").share({
+			text: "I just found my new startup idea: " + output,
+			app_id: 1448143845416014,
+			background: "#B2D1E5",
+			color: "#3C8DC5",
+			button_text: "Share this startup idea!",
+
+			facebook: {
+			  name: "What's my startup idea?",
+			  link: "http://krystalfister.github.io/Startup/",
+			  image: "share_image.png",
+			  caption: "I just found my new startup idea: " + output,
+			  text: "short description"
+			},
+
+			twitter: {
+			  text: "I just found my new startup idea: " + output,
+			  link: "http://krystalfister.github.io/Startup/"
+			},
+
+			gplus: {
+				link: "http://krystalfister.github.io/Startup/"
+			}
+		});
 
 
-	$("#output").html("<p>"+output+"</p>");
-	return output;
+		$("#output").html("<p>"+output+"</p>");
+		return output;
+
+	}
 }
