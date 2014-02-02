@@ -5,15 +5,23 @@ body {
   font-family: "Ubuntu", "Helvetica Neue" sans-serif;
   text-align: center;
   background-color: #F9ECD1;
+  height: 100%;
 }
 
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+  height: 100%;
 }
 
-#main {
+.container {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.main {
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
@@ -54,12 +62,11 @@ html {
 	text-align: center;
 	background-color: #333333;
 	padding: 5px;
-	position: absolute;
 	bottom:0;
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	/*margin-top: 6em;*/
+	display: table-row;
 }
 
 h1 {
@@ -135,19 +142,20 @@ a:hover {
 .footerCredit {
 	font-size: 1em;
 	color: #565656;
-	margin-bottom: 0;
+	margin-top: 1em;
 }
 
 .footer {
 	font-size: 1em;
 	color: #fff;
+	margin-top: 1em;
 }
 
 /*Tablet Layout*/
 
 @media screen and (max-width: 1080px) {
 
-	#main {
+	.main {
 		padding-top: 1em;
 	}
 
@@ -156,16 +164,25 @@ a:hover {
 	}
 
 	#footer {
-		/*margin-top: 1em;*/
 		padding: 0;
 	}
 
 	.footer {
-		max-height: 20px;
+		font-size: 0.7em;
+		margin-top: 1.5em;
 	}
 
 	.footerCredit {
-		font-size: 0.5em;
+		font-size: 0.7em;
+		line-height: 1em;
+		margin-top: 1.5em;
+	}
+
+	.twitter-share-button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 1.5em;
 	}
 
 	#output {
@@ -178,7 +195,7 @@ a:hover {
 
   @media screen and (max-width: 480px) {
 
-  	#main {
+  	.main {
   		padding-top: 0.5em;
   	}
 
@@ -195,7 +212,6 @@ a:hover {
 	}
 
 	#footer {
-		/*margin-top: 1em;*/
 		padding: 0;
 	}
 
@@ -214,12 +230,14 @@ a:hover {
 
   	.footer {
 		font-size: 0.5em;
+		line-height: 2em;
   	}
 
   	.footerCredit {
   		font-size: 0.5em;
   		color: #d0d0d0;
   		padding-top: 1em;
+  		line-height: 2em;
   	}
 
   }
