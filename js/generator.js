@@ -7,7 +7,6 @@ $.getJSON("data/data.json", function(json) {
 	adjectivesArray = json.adjectives;
 	nounsArray = json.nouns;
 	modifiersArray = json.modifiers;
-    console.log(json); // this will show the info in firebug console
 });
 
 // Return a random value from the array
