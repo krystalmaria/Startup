@@ -32,6 +32,8 @@ function runGenerator() {
 
 	var output = (adjective + " " + noun + " " + modifier);
 
+	$("#output").html("<p>"+output+"</p>");
+
 	$(".element").share({
 		text: "I just found my new startup idea: " + output,
 		app_id: 1448143845416014,
@@ -57,8 +59,6 @@ function runGenerator() {
 		}
 	});
 
-
-	$("#output").html("<p>"+output+"</p>");
 	return output;
 
 }
