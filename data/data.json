@@ -78,7 +78,9 @@
         "RFID enabled",
         "Lubricated",
         "Hyper local",
-        "Groupon for your"
+        "Groupon for your",
+        "Self sufficient",
+        "Anti-ageing"
     ],
     "nouns": [
         "data mining",
@@ -133,7 +135,11 @@
         "modeling agency",
         "bionic arm",
         "handbag",
-        "marketplace"
+        "marketplace",
+        "dating service",
+        "meal replacement",
+        "pills",
+        "lasers"
     ],
     "modifiers": [
         "enabler",
