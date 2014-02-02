@@ -64,9 +64,9 @@ function sentence() {
 			facebook: {
 			  name: "What's my startup idea?",
 			  link: "http://krystalfister.github.io/Startup/",
-			  image: "share_image.png",
+			  image: "http://krystalfister.github.io/Startup/images/logo.png",
 			  caption: "I just found my new startup idea: " + output,
-			  text: "short description"
+			  text: "Randomly generate ideas for your startup."
 			},
 
 			twitter: {
