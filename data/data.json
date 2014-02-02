@@ -39,7 +39,6 @@
         "Inexpensive",
         "Ethical",
         "Low-risk high-yield",
-        "Market-driven",
         "Interdependent",
         "Intuitive",
         "Multidisciplinary",
@@ -74,10 +73,12 @@
         "Life-saving",
         "Self-replicating",
         "Water saving",
-        "Marketplace for",
+        "Marketplace for your",
         "Guide service for your",
         "RFID enabled",
-        "Lubricated"
+        "Lubricated",
+        "Hyper local",
+        "Groupon for your"
     ],
     "nouns": [
         "data mining",
@@ -127,9 +128,15 @@
         "network",
         "ad platform",
         "iFrame",
-        "flat design"
+        "flat design",
+        "accelerator",
+        "cleaning service",
+        "modeling agency",
+        "bionic arm",
+        "handbag",
+        "marketplace"
     ],
-    "endNouns": [
+    "modifier": [
         "enabler",
         "driver",
         "fabricator",
@@ -165,6 +172,10 @@
         "for your cat",
         "produced through sustainable sources",
         "for students",
-        "for backpackers"
+        "for backpackers",
+        "as a social enterprise",
+        "as a subscription service",
+        "for aged pensioners",
+        "with a beautiful UI"
     ]
 }
