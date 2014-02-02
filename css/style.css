@@ -161,11 +161,18 @@ a:hover {
 	}
 
 	.footer {
-		max-height: 20px;
+		font-size: 0.5em;
 	}
 
 	.footerCredit {
 		font-size: 0.5em;
+	}
+
+	.twitter-share-button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5px;
 	}
 
 	#output {
