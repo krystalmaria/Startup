@@ -23,10 +23,8 @@ function sentence() {
 			adjectivesArray = json.adjectives;
 			nounsArray = json.nouns;
 			modifiersArray = json.modifiers;
-		    console.log(json); // this will show the info in firebug console
+	    	runGenerator();
 		});
-
-		runGenerator();
 
 	} else {
 		runGenerator();
