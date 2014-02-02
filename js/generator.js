@@ -32,7 +32,9 @@ function sentence() {
 
 		runGenerator();
 
-	} else {}
+	} else {
+		runGenerator();
+	}
 
 	function runGenerator() {
 
