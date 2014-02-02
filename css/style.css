@@ -38,7 +38,7 @@ html {
 }
 
 .element {
-	width: 100% !important;
+	width: 100% !important; /*Override width of share button to allow for longer text*/
 	margin-right: auto;
 	margin-left: auto;
 	background-color: #F9ECD1;
@@ -47,7 +47,7 @@ html {
 }
 
 .element .social.active {
-	margin-left: 0px !important;
+	margin-left: 0px !important; /*Override share popover sitting to the left*/
 }
 
 #footer {
@@ -59,7 +59,7 @@ html {
 	width: 100%;
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 6em;
+	/*margin-top: 6em;*/
 }
 
 h1 {
@@ -156,7 +156,7 @@ a:hover {
 	}
 
 	#footer {
-		margin-top: 1em;
+		/*margin-top: 1em;*/
 		padding: 0;
 	}
 
@@ -195,7 +195,7 @@ a:hover {
 	}
 
 	#footer {
-		margin-top: 1em;
+		/*margin-top: 1em;*/
 		padding: 0;
 	}
 
@@ -210,7 +210,7 @@ a:hover {
   	.btn {
   		min-width: 8em;
   		font-size: 20px;
-  	} 
+  	}
 
   	.footer {
 		font-size: 0.5em;
